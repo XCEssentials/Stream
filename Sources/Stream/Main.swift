@@ -19,11 +19,17 @@ class Wrapper<T>
     {
         // https://developer.apple.com/documentation/uikit/uicontrol#1943645
 
-        guard let typedPayload = payload as? T else { return }
-
-        //---
-
-        handler?(typedPayload)
+        if
+            let typedPayload = () as? T // T is Void
+        {
+            handler?(typedPayload)
+        }
+        else
+        if
+            let typedPayload = payload as? T
+        {
+            handler?(typedPayload)
+        }
     }
 }
 
@@ -77,12 +83,6 @@ extension ValueStream
     {
         wrapper.handler?(payload)
     }
-
-//    mutating
-//    func getTargetSelector() -> (AnyObject, Selector)
-//    {
-//        return (handlerWrapper, #selector(Wrapper.emit))
-//    }
 }
 
 //---
