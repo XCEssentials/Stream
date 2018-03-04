@@ -445,7 +445,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 183C3888080AAEAA7AB7E551 /* Pods-Common-StreamTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,7 +463,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C190F43CE7A385032DA8306C /* Pods-Common-Stream.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = NO;
@@ -545,7 +543,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E753CC0D15CC7409776A3B7 /* Pods-Common-Stream.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = NO;
@@ -569,7 +566,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE6328DBCC11862D19CCA725 /* Pods-Common-StreamTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
