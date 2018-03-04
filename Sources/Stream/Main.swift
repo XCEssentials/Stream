@@ -1,6 +1,6 @@
 import Foundation
 
-//---
+// MARK: - Wrapper
 
 class Wrapper<T>
 {
@@ -33,7 +33,7 @@ class Wrapper<T>
     }
 }
 
-//---
+// MARK: - Stream
 
 public
 struct ValueStream<T>
@@ -49,22 +49,11 @@ struct ValueStream<T>
     }
 }
 
-//---
+// MARK: - Stream management
 
 public
 extension ValueStream
 {
-    /**
-     Gives access to exact instace of the object that can be used as target
-     when bind this stream directly to a UIControlEvents source - use 'StreamEvent'
-     method 'emit', marked intentionally as '@objc' function for such usage.
-     */
-//    mutating // limit access!
-//    func event() -> EventHandlerWrapper
-//    {
-//        return handlerWrapper
-//    }
-
     /**
      Defines handler that's going to be executed when the stream emits an event.
      */
@@ -85,12 +74,21 @@ extension ValueStream
     }
 }
 
-//---
+// MARK: - Convenience aliases
 
 public
 typealias StreamOf<T> = ValueStream<T>
 
-//---
-
 public
 typealias StreamVoid = ValueStream<Void>
+
+// MARK: - Custom operators
+
+public
+func >> <T>(
+    stream: ValueStream<T>,
+    handler: @escaping (T) -> Void
+    )
+{
+    stream.bind(with: handler)
+}

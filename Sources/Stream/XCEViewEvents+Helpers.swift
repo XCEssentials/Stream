@@ -36,3 +36,23 @@ extension PendingRecognizerOperation
         )
     }
 }
+
+// MARK: - Custom operators
+
+public
+func >> <T>(
+    eventsOperation: PendingEventsOperation,
+    stream: ValueStream<T>
+    )
+{
+    eventsOperation.plug(into: stream)
+}
+
+public
+func >> <R, T>(
+    recognizerOperation: PendingRecognizerOperation<R>,
+    stream: ValueStream<T>
+    )
+{
+    recognizerOperation.addRecognizer(pluggedInto: stream)
+}
