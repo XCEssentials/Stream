@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
   s.license                   = { :type => 'MIT', :file => 'LICENSE' }
   s.author                    = { 'Maxim Khatskevich' => 'maxim@khatskevi.ch' }
 
+  s.swift_version             = '4.0'
+
   s.framework                 = 'Foundation'
 
   s.dependency                  'XCEViewEvents', '~> 1.1.0'
