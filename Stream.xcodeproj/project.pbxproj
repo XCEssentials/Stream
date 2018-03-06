@@ -11,6 +11,7 @@
 		621D3767C8D44F0C3CA4055B /* ValueStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0228A71301A5CCDF1E7C8C /* ValueStream.swift */; };
 		659E5F7BDE6A2D20BD2A2FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A052E1C4DDAF9FDE16427330 /* Foundation.framework */; };
 		675692C867C99973A3F58AA5 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E47F21DFB2D62660E971E3 /* Main.swift */; };
+		94BF4FC1204F3DA400B5B050 /* HandlerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF4FC0204F3DA400B5B050 /* HandlerWrapper.swift */; };
 		94F305F0204B860D0068D4C5 /* XCEViewEvents+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F305EF204B860D0068D4C5 /* XCEViewEvents+Helpers.swift */; };
 		9D2E0F216BC66D20331A4475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A052E1C4DDAF9FDE16427330 /* Foundation.framework */; };
 		AF6CBC8EB637CC24F8ED1A76 /* Pods_Common_Stream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0765FE76899EACAE176065 /* Pods_Common_Stream.framework */; };
@@ -54,6 +55,7 @@
 		1D0228A71301A5CCDF1E7C8C /* ValueStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValueStream.swift; sourceTree = "<group>"; };
 		6E753CC0D15CC7409776A3B7 /* Pods-Common-Stream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-Stream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Common-Stream/Pods-Common-Stream.debug.xcconfig"; sourceTree = "<group>"; };
 		89475C8F67B6DE79A4AD8107 /* XCEStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCEStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BF4FC0204F3DA400B5B050 /* HandlerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlerWrapper.swift; sourceTree = "<group>"; };
 		94F305EF204B860D0068D4C5 /* XCEViewEvents+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCEViewEvents+Helpers.swift"; sourceTree = "<group>"; };
 		95D256FB9428706E35737D98 /* StreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E47F21DFB2D62660E971E3 /* Main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				1D0228A71301A5CCDF1E7C8C /* ValueStream.swift */,
+				94BF4FC0204F3DA400B5B050 /* HandlerWrapper.swift */,
 				94F305EF204B860D0068D4C5 /* XCEViewEvents+Helpers.swift */,
 			);
 			path = Stream;
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F305F0204B860D0068D4C5 /* XCEViewEvents+Helpers.swift in Sources */,
+				94BF4FC1204F3DA400B5B050 /* HandlerWrapper.swift in Sources */,
 				621D3767C8D44F0C3CA4055B /* ValueStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
