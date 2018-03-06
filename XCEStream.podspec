@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name                      = 'XCEStream'
   s.summary                   = 'Stream of values.'
-  s.version                   = '1.0.0'
+  s.version                   = '1.1.0'
   s.homepage                  = 'https://XCEssentials.github.io/Stream'
 
   s.source                    = { :git => 'https://github.com/XCEssentials/Stream.git', :tag => s.version }
@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
 
   s.license                   = { :type => 'MIT', :file => 'LICENSE' }
   s.author                    = { 'Maxim Khatskevich' => 'maxim@khatskevi.ch' }
+
+  s.swift_version             = '4.0'
 
   s.framework                 = 'Foundation'
 
