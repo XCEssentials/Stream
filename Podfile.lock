@@ -2,7 +2,7 @@ PODS:
   - XCERequirement (1.6.0)
   - XCETesting (1.2.0):
     - XCERequirement (~> 1.5)
-  - XCEViewEvents (1.1.0)
+  - XCEViewEvents (1.1.1)
 
 DEPENDENCIES:
   - XCETesting (~> 1.2)
@@ -11,7 +11,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   XCERequirement: 4dbe5a3e19b4784dc3c6943ec9b929e7f7dd7ff5
   XCETesting: d675bc94b51d9deff7c628b0e77aebdac306e591
-  XCEViewEvents: 5d8a7595dfddb3d49c85329e48162dcc49cff8fb
+  XCEViewEvents: 30ea26fd5acda9f44fa469b0f90658935fcbfa2c
 
 PODFILE CHECKSUM: ebde0bb9372aa46782ab9a46784e43577701833c
 
