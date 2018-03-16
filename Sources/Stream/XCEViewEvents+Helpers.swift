@@ -31,6 +31,17 @@ import XCEViewEvents
 //---
 
 public
+extension PendingBarButtonOperation
+{
+    func plug<T>(into stream: ValueStream<T>)
+    {
+        set(#selector(stream.wrapper.submit), of: stream.wrapper)
+    }
+}
+
+//---
+
+public
 extension PendingEventsOperation
 {
     func plug<T>(into stream: ValueStream<T>)
@@ -64,6 +75,15 @@ extension PendingRecognizerOperation
 }
 
 // MARK: - Custom operators
+
+public
+func >> <T>(
+    barButtonOperation: PendingBarButtonOperation,
+    stream: ValueStream<T>
+    )
+{
+    barButtonOperation.plug(into: stream)
+}
 
 public
 func >> <T>(
