@@ -79,3 +79,14 @@ class HandlerWrapper<Input>
         }
     }
 }
+
+extension HandlerWrapper where Input == Void
+{
+    func wrap<Target: AnyObject>(
+        _ object: Target,
+        _ functionGetter: @escaping (Target) -> () -> Void
+        )
+    {
+        handler = { [weak object] input in object.map(functionGetter)?() }
+    }
+}

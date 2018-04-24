@@ -65,6 +65,18 @@ extension ValueStream
     }
 }
 
+public
+extension ValueStream where T == Void
+{
+    func bind<Target: AnyObject>(
+        with object: Target,
+        _ functionGetter: @escaping (Target) -> () -> Void
+        )
+    {
+        wrapper.wrap(object, functionGetter)
+    }
+}
+
 // MARK: - Convenience aliases
 
 public
@@ -86,7 +98,7 @@ func >> <Target: AnyObject, Input>(
 
 public
 func >> <Target: AnyObject>(
-    stream: ValueStream<Void>,
+    stream: StreamVoid,
     handler: (Target, (Target) -> () -> Void)
     )
 {
